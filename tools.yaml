@@ -1,0 +1,61 @@
+# Source dataset for the comparison table in README.md.
+# Run `python render_table.py --write` after editing to regenerate the table.
+# Facts (methods, coverage, pricing) reflect each vendor's public positioning in
+# early 2026 and change often. Corrections welcome via PR.
+
+providers:
+  - name: iDenfy
+    url: https://www.idenfy.com
+    methods: "ID document + biometric face match + 3D liveness"
+    coverage: "200+ countries, 3,500+ document types"
+    pricing: "Pay per approval (failed attempts not charged)"
+    best_for: "Websites and high-volume platforms wanting no-code integration"
+
+  - name: Sumsub
+    url: https://sumsub.com
+    methods: "Document + biometrics + AML, workflow builder"
+    coverage: "220+ countries"
+    pricing: "From $1.35 per completed check"
+    best_for: "Enterprises with complex multi-market onboarding"
+
+  - name: ID.me
+    url: https://www.id.me
+    methods: "Document + selfie + reusable ID wallet, hybrid review"
+    coverage: "US and Canada only"
+    pricing: "Custom"
+    best_for: "US and Canada platforms and returning users"
+
+  - name: Veriff
+    url: https://www.veriff.com
+    methods: "Document + passive liveness + AML"
+    coverage: "12,000+ document types, non-Latin scripts"
+    pricing: "From $1.39 per completed check"
+    best_for: "Internationally diverse user bases"
+
+  - name: Onfido (Entrust)
+    url: https://onfido.com
+    methods: "Document + hybrid review, Workflow Studio"
+    coverage: "Per-region accuracy published"
+    pricing: "Pay per attempt (failed sessions charged)"
+    best_for: "Compliance teams needing market-specific logic"
+
+  - name: Yoti
+    url: https://www.yoti.com
+    methods: "Facial age estimation, no ID upload required"
+    coverage: "UK retail focus"
+    pricing: "Custom"
+    best_for: "Low-friction age estimation without document upload"
+
+  - name: Veridas
+    url: https://veridas.com
+    methods: "Biometric-first + certified liveness (NIST, iBeta)"
+    coverage: "Global"
+    pricing: "Custom"
+    best_for: "Biometric-first verification with certified liveness"
+
+  - name: AgeID
+    url: ""
+    methods: "Account-based age check"
+    coverage: "Adult-content sites"
+    pricing: "Custom"
+    best_for: "Adult content platforms needing compliance gating"
