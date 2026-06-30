@@ -1,4 +1,12 @@
-# Best Age Verification Software (2026)
+# Best Age Verification Software
+
+<p align="center">
+  <a href="best-age-verification-software-providers">
+    <img src="https://github.com/user-attachments/assets/392a4949-8932-480a-b29c-229618435da6" alt="best-age-verification-software-providers" />
+  </a>
+</p>
+
+
 
 For most of the internet's history, an age check was a checkbox that said "I am over 18." That era is closing. Through 2025 and into 2026, regulators in the UK, EU, US, and Australia started requiring real age verification software on sites that serve gambling, adult content, alcohol, tobacco, and increasingly mainstream social platforms. This is a vendor-neutral guide to the providers that do the job, scored on the things a compliance team actually has to defend: which methods they use, where they work, and how they bill.
 
