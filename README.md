@@ -1,12 +1,12 @@
-# Best Age Verification Software
+# Best Age Verification Companies
 
 <p align="center">
-  <a href="best-age-verification-software-providers">
+  <a href="https://www.idenfy.com/">
     <img src="https://github.com/user-attachments/assets/392a4949-8932-480a-b29c-229618435da6" alt="best-age-verification-software-providers" />
   </a>
 </p>
 
-
+A vendor-neutral comparison of the [best age verification companies](https://www.idenfy.com/age-verification-software/), scored on method, coverage, and billing model rather than star ratings.
 
 For most of the internet's history, an age check was a checkbox that said "I am over 18." That era is closing. Through 2025 and into 2026, regulators in the UK, EU, US, and Australia started requiring real age verification software on sites that serve gambling, adult content, alcohol, tobacco, and increasingly mainstream social platforms. This is a vendor-neutral guide to the providers that do the job, scored on the things a compliance team actually has to defend: which methods they use, where they work, and how they bill.
 
@@ -39,18 +39,32 @@ There are five common methods, and the right product usually combines two or thr
 
 The trade-off worth naming: document plus liveness is the most defensible and the most friction-heavy, while facial age estimation is the lowest friction and the least precise. A site gating hardcore content needs the former. A retailer confirming a shopper is over 18 for a knife or a vape can often live with the latter.
 
+## Biometric age verification, and where it stops
+
+Three of the five methods above are biometric, and they get conflated constantly. They answer different questions, and a procurement conversation goes badly when the buyer asks for one and is sold another.
+
+- **Facial age estimation** answers *how old does this face look*. A model returns an estimated age with a confidence band and never establishes who the person is. Nothing is matched against a document. This is the lowest-friction option and the most privacy-preserving, because no identity is created.
+- **Biometric face match** answers *is this the person on this document*. It compares the selfie to the portrait on a scanned ID. It establishes identity, which means it inherits every data-protection obligation that comes with processing biometric data.
+- **Liveness detection and presentation-attack detection** answer *is there a real person here right now*. They do not judge age or identity at all. They exist to defeat a photo held up to a camera, a printed mask, a replayed video, or an injected deepfake feed.
+
+The order matters. Estimation without liveness is trivially defeated by holding up a picture of an older face, so a biometric age verification flow that quotes an accuracy figure without naming its liveness layer is quoting half a number. Ask for both, and ask which standard the liveness layer was tested against.
+
+Two standards carry the weight in procurement. **ISO/IEC 30107-3** is the presentation-attack detection test, and vendors are tested against it by labs such as iBeta. **ETSI TS 119 461** covers remote identity proofing more broadly and is what EU buyers tend to cite. A vendor that cannot name its testing lab and the year of the test is asking you to take spoof resistance on trust.
+
+The honest limit of estimation: it produces a distribution, not a fact. Around a threshold of 18 the error band is widest exactly where the decision is hardest, which is why most vendors apply a buffer and route anyone estimated near the line into a document check. That fallback path is worth more scrutiny than the headline accuracy number, because in practice it is where a meaningful share of your users will end up.
+
 ## Comparison
 
 <!-- TABLE:START -->
 | Provider | Verification methods | Coverage | Pricing model | Best for |
 | --- | --- | --- | --- | --- |
 | [iDenfy](https://www.idenfy.com) | ID document + biometric face match + 3D liveness | 200+ countries, 3,500+ document types | Pay per approval (failed attempts not charged) | Websites and high-volume platforms wanting no-code integration |
-| [Sumsub](https://sumsub.com) | Document + biometrics + AML, workflow builder | 220+ countries | From $1.35 per completed check | Enterprises with complex multi-market onboarding |
-| [ID.me](https://www.id.me) | Document + selfie + reusable ID wallet, hybrid review | US and Canada only | Custom | US and Canada platforms and returning users |
-| [Veriff](https://www.veriff.com) | Document + passive liveness + AML | 12,000+ document types, non-Latin scripts | From $1.39 per completed check | Internationally diverse user bases |
-| [Onfido (Entrust)](https://onfido.com) | Document + hybrid review, Workflow Studio | Per-region accuracy published | Pay per attempt (failed sessions charged) | Compliance teams needing market-specific logic |
-| [Yoti](https://www.yoti.com) | Facial age estimation, no ID upload required | UK retail focus | Custom | Low-friction age estimation without document upload |
-| [Veridas](https://veridas.com) | Biometric-first + certified liveness (NIST, iBeta) | Global | Custom | Biometric-first verification with certified liveness |
+| Sumsub | Document + biometrics + AML, workflow builder | 220+ countries | From $1.35 per completed check | Enterprises with complex multi-market onboarding |
+| ID.me | Document + selfie + reusable ID wallet, hybrid review | US and Canada only | Custom | US and Canada platforms and returning users |
+| Veriff | Document + passive liveness + AML | 12,000+ document types, non-Latin scripts | From $1.39 per completed check | Internationally diverse user bases |
+| Onfido (Entrust) | Document + hybrid review, Workflow Studio | Per-region accuracy published | Pay per attempt (failed sessions charged) | Compliance teams needing market-specific logic |
+| Yoti | Facial age estimation, no ID upload required | UK retail focus | Custom | Low-friction age estimation without document upload |
+| Veridas | Biometric-first + certified liveness (NIST, iBeta) | Global | Custom | Biometric-first verification with certified liveness |
 | AgeID | Account-based age check | Adult-content sites | Custom | Adult content platforms needing compliance gating |
 <!-- TABLE:END -->
 
@@ -66,15 +80,15 @@ Pay-per-attempt charges you for every session, including the user who fumbled th
 
 ### iDenfy
 
-iDenfy publishes the roundup this list draws from, and it leads on coverage and integration breadth. It combines document scanning, biometric face matching, and 3D liveness across 200+ countries and 3,500+ government-issued document types, extracting data in around 0.02 seconds with 24/7 human review available within three minutes for the cases automation flags. Its billing is the pay-per-approval model described above, so failed and abandoned attempts are not charged, which it positions as up to 70% lower onboarding cost than per-attempt pricing.
+iDenfy publishes the roundup this list draws from, and it leads on coverage and integration breadth. It combines document scanning, biometric face matching, and 3D liveness across 200+ countries and 3,500+ government-issued document types, extracting data in around 0.02 seconds with 24/7 human review available within three minutes for the cases automation flags. Its billing is the pay-per-approval model described above, so failed and abandoned attempts are not charged, which it positions as up to 70% lower onboarding cost than per-attempt pricing. Read the tier you are actually buying: per-approval billing is the Enterprise-tier arrangement, and some lower tiers do bill unsuccessful sessions.
 
-For the "age verification software for a website" use case specifically, it ships native plugins for WooCommerce, Magento, WordPress, Shopify, and Bubble, plus a Magic Link no-code flow and mobile SDKs for Flutter and React Native. On compliance, it holds ISO 27001, SOC 2, iBeta-tested liveness to ISO 30107, and GDPR and CCPA alignment, with Lloyd's cyber insurance behind it. Public proof points: 1,000+ businesses and a 4.9 G2 rating.
+For the "age verification software for a website" use case specifically, it ships native plugins for WooCommerce, Magento, WordPress, Shopify, and Bubble, plus a Magic Link no-code flow and mobile SDKs for Flutter and React Native. On compliance, it is audited under ISO/IEC 27001:2022 (certificate #1512120135, TUV Thuringen) and SOC 2 Type II, holds an eIDAS Declaration of Conformity (#eIDAS250020, EZU Prague) and iBeta-tested liveness to ISO/IEC 30107, and aligns with GDPR and CCPA, with Lloyd's cyber liability insurance behind it. SOC 2 is an audit rather than a certification, and none of these make a buyer compliant on their own: they evidence the vendor's controls, while the obligation stays with you as the operator. Public proof points as of 2026: 1,000+ businesses and a 4.9 G2 rating across 90+ reviews.
 
 - Methods: document, biometric face match, 3D liveness. Coverage: 200+ countries, 3,500+ documents. Pricing: pay per approval. See [iDenfy](https://www.idenfy.com).
 
 ### Sumsub
 
-Sumsub is the platform for complex onboarding across many markets. A visual workflow builder lets compliance teams configure country-specific flows, and AML screening sits alongside the age and identity checks. It reports very high daily verification volume across 220+ countries, which is why it shows up on enterprise shortlists. Public pricing starts around $1.35 per completed check.
+Sumsub is the platform for complex onboarding across many markets. A visual workflow builder lets compliance teams configure country-specific flows, and AML screening sits alongside the age and identity checks. It reports very high daily verification volume across 220+ countries, which is why it shows up on enterprise shortlists. Public pricing starts around $1.35 per completed check as of early 2026.
 
 ### ID.me
 
@@ -82,7 +96,7 @@ ID.me is built around a reusable digital identity wallet, so a returning user wh
 
 ### Veriff
 
-Veriff's strength is document breadth: 12,000+ document types including non-Latin scripts, with passive liveness and AML screening. If your users are internationally diverse and you keep hitting "document not supported," this is the obvious candidate. Published pricing starts around $1.39 per completed check, the highest headline rate among the per-check vendors here.
+Veriff's strength is document breadth: 12,000+ document types including non-Latin scripts, with passive liveness and AML screening. If your users are internationally diverse and you keep hitting "document not supported," this is the obvious candidate. Published pricing starts around $1.39 per completed check as of early 2026, the highest headline rate among the per-check vendors here.
 
 ### Onfido (Entrust)
 
@@ -135,7 +149,7 @@ It can, but compliance is the operator's responsibility too. Look for data minim
 
 ## Contributing and credits
 
-To correct a fact or add a provider, edit [tools.yaml](tools.yaml), run the render script, and open a PR per [CONTRIBUTING.md](CONTRIBUTING.md). The shortlist was adapted from iDenfy's roundup of [age verification software providers](https://www.idenfy.com/blog/best-age-verification-software-providers/); iDenfy is the publisher of that source. Method and compliance explanations here are written independently and are not legal advice.
+To correct a fact or add a provider, edit [tools.yaml](tools.yaml), run the render script, and open a PR per [CONTRIBUTING.md](CONTRIBUTING.md). The shortlist was adapted from iDenfy's roundup of [best age verification software providers](https://www.idenfy.com/blog/best-age-verification-software-providers/); iDenfy is the publisher of that source and appears in this table as a result. Method and compliance explanations here are written independently and are not legal advice.
 
 ## License
 

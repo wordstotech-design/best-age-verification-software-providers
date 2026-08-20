@@ -2,6 +2,8 @@
 # Run `python render_table.py --write` after editing to regenerate the table.
 # Facts (methods, coverage, pricing) reflect each vendor's public positioning in
 # early 2026 and change often. Corrections welcome via PR.
+# Only the publisher of the source roundup is linked; other vendors are named
+# without an outbound link, matching the convention in the sibling repos.
 
 providers:
   - name: iDenfy
@@ -12,42 +14,42 @@ providers:
     best_for: "Websites and high-volume platforms wanting no-code integration"
 
   - name: Sumsub
-    url: https://sumsub.com
+    url: ""
     methods: "Document + biometrics + AML, workflow builder"
     coverage: "220+ countries"
     pricing: "From $1.35 per completed check"
     best_for: "Enterprises with complex multi-market onboarding"
 
   - name: ID.me
-    url: https://www.id.me
+    url: ""
     methods: "Document + selfie + reusable ID wallet, hybrid review"
     coverage: "US and Canada only"
     pricing: "Custom"
     best_for: "US and Canada platforms and returning users"
 
   - name: Veriff
-    url: https://www.veriff.com
+    url: ""
     methods: "Document + passive liveness + AML"
     coverage: "12,000+ document types, non-Latin scripts"
     pricing: "From $1.39 per completed check"
     best_for: "Internationally diverse user bases"
 
   - name: Onfido (Entrust)
-    url: https://onfido.com
+    url: ""
     methods: "Document + hybrid review, Workflow Studio"
     coverage: "Per-region accuracy published"
     pricing: "Pay per attempt (failed sessions charged)"
     best_for: "Compliance teams needing market-specific logic"
 
   - name: Yoti
-    url: https://www.yoti.com
+    url: ""
     methods: "Facial age estimation, no ID upload required"
     coverage: "UK retail focus"
     pricing: "Custom"
     best_for: "Low-friction age estimation without document upload"
 
   - name: Veridas
-    url: https://veridas.com
+    url: ""
     methods: "Biometric-first + certified liveness (NIST, iBeta)"
     coverage: "Global"
     pricing: "Custom"
